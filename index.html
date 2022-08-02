@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4, user-scalable=no" />
+  <style>
+  body{
+    background-color : #0f1c2f ;
+    max-height: 3000px ;
+    max-width: 1000px ;
+    zoom: 0 ;
+  }
+   *{margin: 0px ;
+     scroll-behavior: smooth;
+   }
+    /* code for my navigation bar */
+   .sidenav{
+     height: 100% ;
+     width : 0;
+     position: fixed ;
+     z-index: 1 ;
+     top: 0 ;
+    left: 0 ;
+    background-color: #063970;
+    overflow-x: hidden ;
+    transition: 0.5s ;
+    padding-top: 90px ;
+    font-family: sans-serif;
+    font-size: 40px ;
+   }
+   .sidenav a{
+     padding: 8px 18px 28px 92px ;
+     text-decoration: none ;
+     font-size: 40px ;
+     color: white ;
+     display: block;
+     transition: 0.3s ;
+   }
+   .sidenav a:hover{
+     color: #f1f1f1 ;
+   }
+   .sidenav .closebtn{
+     position: absolute ;
+     top : 0 ;
+     right : 100px;
+     font-size: 150px ;
+     margin-left: 50px ;
+   }
+   @media screen and (max-height : 450px )
+   { .sidenav{padding-top: 15px ;}
+   .sidenav a{font-size: 18px ;}
+   }
+   
+   
+   
+   /* creating other part of site */
+   span{
+     position: absolute;
+     top: 0px ;
+     left : 0px;
+     background-color : #0f1c2f ;
+     color : #1d74f9 ;
+     padding: 15px 10px 15px  10px;
+     width: 100% ;
+     margin: 0px ;
+     font-size: 80px ;
+     font-family: fantasy ;
+     float: right;
+   }
+   div.A1{
+     height:1500px ;
+     width: 100% ;
+     margin: 0px;
+     font-family : sans-serif ;
+     background-color: #0f1c2f ;
+     position: absolute;
+     top : 100px;
+   }
+   
+   div.A2{
+   
+    width: 700px ;
+    height: 1.5px ;
+    background-color : white ;
+    margin: 8px ;
+   }
+   
+   div.A3{
+     width : 500px;
+     height: 400px ;
+     padding: 0px 0px 25px 0px ;
+     background-color: #063970 ;
+     border-radius: 1em;
+     margin-left:  70px ;
+     margin-top : 15px;
+     color : white ;
+    
+   }
+  
+   form{
+     width: 800px;
+     height: 650px ;
+     padding: 20px ;
+     background-color : #1d74f9 ;
+     color : white; 
+     margin-left : 70px;
+     margin-top:  100px ;
+   }
+   label{
+     display: inline-block;
+     width: 350px ;
+     margin:10px;
+     font-size: 20px ;
+    
+   }
+   input{
+     width: 350px ;
+     padding: 10px ;
+     margin : 10px;
+     font-family: sans-serif;
+     border : 3px solid white ;
+   }
+   
+   select{
+     padding: 10px 5px ;
+     margin: 10px ;
+     width: 300px ;
+     
+   }
+   button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 25px 90px 25px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ i{
+   font-size: 40px ;
+   padding-right: 20px ;
+   color: #1d74f9;
+ }
+ 
+ #footer{
+   height : 300px ;
+   width: 100%;
+   color :#063970;
+   background-color: #063970 ;
+   position: relative;
+   top: 2600px ;
+   font-weight: lighter;
+   font-family: sans-serif;
+   color : white ;
+   align-content: left ;
+ }
+
+div.icon{
+  padding: 20px ;
+  width: auto;
+  height : 100px;
+}
+ 
+
+  </style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+/* Link for icon used*/
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/cs/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+/*Link for icon used */
+
+<body>
+  <div id="mysidenav" class="sidenav">
+    <a href="javascript:void(0)"
+    class="closebtn"
+    onclick="closeNav()">&times;</a>
+    
+    <a href="#"><i class="fa fa-home"></i> Home</a>
+    
+    <br><a href=""><i class="fa fa-newspaper-o"></i>News</a>
+    
+    <br><a href="https://hqhrvzto1eq2qjuezsgdzq.on.drv.tw/About /About.html "><i class="fa fa-file"></i>About Us
+    </a>
+   <br>
+    <a href=""><i class="fa fa-shield"></i>Report & Support</a>
+  </div>
+  <span style="cursor:pointer" onclick="openNav()">&#9776 <h1>Menu</h1>
+  </span>
+
+
+
+
+
+
+  <div class="A1">
+    
+    
+    <br></br>
+    <i class="fa fa-pencil-square-o" 
+    style="float:right ; font-size: 100px ; margin-right: 270px ; margin-top: 120px "></i>
+    <h1 style="font-size:120px; color:#1d74f9;padding-left:70px ; margin-top :70px">
+      <b>Discover</b></h1>
+    <p style=" font-size : 70px ; color: #1d74f9 ; padding-left: 70px">Welcome to  ToolsPin</p>
+    <b>
+      
+    
+  <div class="A4">
+    <a href="#">
+      <div class="A3">
+        <img src="https://w0.peakpx.com/wallpaper/431/699/HD-wallpaper-formula-math-texture.jpg" height="315px" width="500px" ></img>
+         <p style="font-size :30px ; padding: 5px">Download Syllabus
+        </p>
+           <p style="padding: 5px ">For all branches ( semester 1- 6)
+           </p>
+      </div>
+    </a>
+      
+     <a href="#">
+       <div class="A3">
+        <img src="https://images.wallpaperscraft.com/image/single/notebook_book_cup_207703_1280x720.jpg" height="315px" width="500px"></img>
+         <p style="font-size :30px ; padding: 5px">Download Books & Notes
+         </p>
+         <p style="padding: 5px ">
+           For all branches
+         </p>
+       </div>
+     </a>
+      
+  </div>
+      
+    <form action="#">
+          <h1 style="padding: 8px">Create your Account </h1>
+          <div class="A2"></div>
+      <label for="fname">Enter your name : </label>
+      <input type="text"  value="" id="fname">
+      <br><label for="email">Enter you Email here : </label>
+      <input type="text" id="email" value="">
+      <br><label for="mobile_num">Enter your Mobile No. :</label>
+      <input type="number" id="mobile_num">
+      <br><label for="password">Password :</label>
+      <input type="password" id="password" value="">
+      <br><label for="branch">Select your branch : </label>
+      
+      <select>
+        <option value="Computer science">Computer science & engg</option>
+        <option value="Electronics and Communication Engg">Electronics & Comm. Engg</option>
+        <option value="Electrical Engg">Electrical Engg</option>
+        <option value="Civil Engg">Civil Engineering </option>
+        <option value="mechanical engg">Mechanical engineering </option>
+      </select>
+      
+      <br><label for="sem">Select your semester: :</label>
+      <select>
+        <option value="sem 1">Semester 1</option>
+        <option value="sem 2">Semester 2 </option>
+        <option value="sem 3">Semester 3</option>
+        <option value="sem 4">Semester 4 </option>
+        <option value="sem 5">Semester 5 </option>
+        <option value="sem 6">Semester 6</option>
+      </select>
+      
+       <center><br><button type="button" onclick="alert('Account  created. Thanks for visiting our website.')">Submit
+       </button> 
+       <br><br>
+       <p>Already have an account? <a href="#">Login Here!</a></p>
+       </center>
+       <div class="A2"></div>
+       Make sure that you also have your WhatsApp account with the same contact number that you have been provided to us.
+    </form>
+    
+   
+    
+  </div>
+  
+  
+  <div id="footer">
+    <br>
+    <center>
+    <address>
+      <a href="mailto: vivekthakurcse1@gmail.com">
+       <i class="material-icons" style="font-size :
+       67px ; padding-left: 20px">mail</i>
+      </a>
+    </address>
+    
+      <a href="https://instagram.com/vivekthakur.exe?igshid=YmMyMTA2M2Y=">
+        <i class="fa fa-instagram" style="font-size : 67px ; padding-left: 20px"></i>
+      </a>
+      
+       <a href="tel:+91 6299902752">
+       <i class="fa fa-phone" style="font-size: 67px ;padding-left: 20px"></i>
+      </a>
+
+    </center>
+  </div>
+ 
+    <script>
+       function openNav(){
+         document.getElementById("mysidenav")
+        .style.width="90%" ;
+      }
+    </script>
+    
+    <script>
+     function closeNav(){
+      document.getElementById("mysidenav")
+      .style.width ="0%" ;
+      }
+    </script>
+   
+</body>
+
+</html>
